@@ -13,7 +13,8 @@ Location of organism: [10 94],  Closest food target : [18 76]
 Location of organism: [36 27],  Closest food target : [55 38]
 */
 #define FIRST_INDEX i == 0
-#define SET_CLOSEST_DISTANCE closest_distance = new_distance
+#define closest_distance > distance
+#define SET_CLOSEST_DISTANCE closest_distance = distance
 #define SET_CLOSEST_FOOD_X  closest_food_location->x = food_points[i].x
 #define SET_CLOSEST_FOOD_Y  closest_food_location->y = food_points[i].y
 #define REPEAT_TILL_POINTS_LENGTH for(int i = 0; i < points_length; i++)
