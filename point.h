@@ -12,10 +12,7 @@ Location of organism: [69 7],   Closest food target : [55 38]
 Location of organism: [10 94],  Closest food target : [18 76]
 Location of organism: [36 27],  Closest food target : [55 38]
 */
-#define IS_FIRST_INDEX i == 0
 #define FOOD_POINTS {{18,76},{19,66},{89,57},{9,71},{55,38}}
-#define X pow((food_points[i].x - current_location.x),2)
-#define Y pow((food_points[i].y - current_location.y),2)
 #define POINTS_LENGTH sizeof(food_points) / sizeof(food_points[0])
 
 typedef struct{
@@ -23,4 +20,5 @@ typedef struct{
   int y;
 } Point;
 
+float find_distance(Point p1, Point p2);
 void get_closest_food(Point food_points[], int points_length, Point current_location, Point *closest_food_location);
