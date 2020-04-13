@@ -6,8 +6,7 @@ void get_closest_food(Point food_points[], int points_length, Point current_loca
   REPEAT_TILL_POINTS_LENGTH {
     distance = sqrt(X + Y);
     if(FIRST_INDEX || IS_DISTANCE_SHORT) {
-      SET_CLOSEST_FOOD_X;
-      SET_CLOSEST_FOOD_Y;
+      SET_CLOSEST_FOOD_LOCATION;
       SET_CLOSEST_DISTANCE;
     }
   } 
