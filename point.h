@@ -12,6 +12,9 @@ Location of organism: [69 7],   Closest food target : [55 38]
 Location of organism: [10 94],  Closest food target : [18 76]
 Location of organism: [36 27],  Closest food target : [55 38]
 */
+#define SET_CLOSEST_FOOD_X  closest_food_location->x = food_points[i].x
+#define SET_CLOSEST_FOOD_Y  closest_food_location->y = food_points[i].y
+#define FIRST_INDEX i == 0
 #define FOOD_POINTS {{18,76},{19,66},{89,57},{9,71},{55,38}}
 #define X pow((food_points[i].x - current_location.x),2)
 #define Y pow((food_points[i].y - current_location.y),2)
@@ -19,8 +22,7 @@ Location of organism: [36 27],  Closest food target : [55 38]
 #define CURRENT_LOCATION current_location.x,current_location.y
 #define CLOSEST_FOOD_LOCATION closest_food_location.x,closest_food_location.y
 
-typedef struct
-{
+typedef struct{
   int x;
   int y;
 } Point;
