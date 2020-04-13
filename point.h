@@ -13,6 +13,7 @@ Location of organism: [10 94],  Closest food target : [18 76]
 Location of organism: [36 27],  Closest food target : [55 38]
 */
 #define FIRST_INDEX i == 0
+#define DISTANCE_BETWEEN sqrt(X + Y)
 #define SET_CLOSEST_FOOD_LOCATION  *closest_food_location = food_points[i]
 #define IS_DISTANCE_SHORT closest_distance > distance
 #define SET_CLOSEST_DISTANCE closest_distance = distance
